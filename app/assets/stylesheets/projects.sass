@@ -1,0 +1,89 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+
+/*************************/
+/*    General Styles     */
+/*************************/
+
+/*
+ * Containers
+ */
+
+.container
+  max-width: 900px
+
+/*
+ * Fonts
+ */
+
+h1
+  font-family: 'Raleway', 'Helvetica', 'Arial'
+  font-size: 32px
+  margin-bottom: 0px
+  letter-spacing: 5px
+  margin-top: 5px
+  font-weight: 600
+
+h5
+  font-family: 'Raleway', 'Helvetica', 'Arial'
+  font-size: 15px
+  margin-bottom: 0px
+  letter-spacing: 2.5px
+
+
+
+/*************************/
+/*       Navigation      */
+/*************************/
+.navbar-default
+  background-color: transparent
+  border: none
+
+  .navbar-nav
+    > li
+      > a, span
+        color: white
+        padding: 20px 0px 3px
+      a:hover
+        border-bottom: 2px solid white
+        color: white
+    .pipe
+      padding: 20px 10px 5px
+      color: white
+
+  .navbar-right
+    > li
+      padding: 10px 5px 5px
+
+
+
+
+
+/*************************/
+/*       Projects        */
+/*************************/
+
+section.projects
+  color: #fff
+  background: url(image_path('projects-header.jpg'))
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  padding: 160px 0px
+  height: 430px
+
+  hr
+    width: 50px
+    border: 2px solid #fff
+    margin: 15px 0px
+
+  p
+    font-weight: 100
+    letter-spacing: 1.5px
+    width: 33%
+    font-size: 14px
