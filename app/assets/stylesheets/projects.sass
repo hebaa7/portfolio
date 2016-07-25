@@ -15,7 +15,7 @@
  */
 
 .container
-  max-width: 900px
+  max-width: 800px
 
 /*
  * Fonts
@@ -35,7 +35,8 @@ h5
   margin-bottom: 0px
   letter-spacing: 2.5px
 
-
+p
+  margin: 0px
 
 /*************************/
 /*       Navigation      */
@@ -47,10 +48,11 @@ h5
   // Toggle mode
   .navbar-toggle
     border: none
-    .icon-bar
-      background-color: #fff
     &:hover
       background-color: transparent
+    .icon-bar
+      background-color: #fff
+
 
   /*
    * Main Navigation
@@ -59,8 +61,8 @@ h5
     > li
       > a
         color: white
-      &:hover, &:focus
-        color: white
+        &:hover, &:focus
+          color: white
       > span
         color: white
 
@@ -74,9 +76,9 @@ h5
         padding: 25px 0px 3px
         margin-left: 10px
         margin-right: 10px
-      &:hover, &:focus
-        border-bottom: 2px solid white
-        color: white
+        &:hover, &:focus
+          border-bottom: 2px solid white
+          color: white
 
     // Home and email icons
     .menu-icon
@@ -94,7 +96,7 @@ h5
 /*       Projects        */
 /*************************/
 
-section.projects
+section.projects-header
   color: #fff
   background: url(image_path('projects-header.jpg'))
   background-size: cover
@@ -111,5 +113,27 @@ section.projects
   p
     font-weight: 100
     letter-spacing: 1.5px
-    width: 33%
     font-size: 14px
+
+section.projects
+  padding: 60px 0px
+  background: #f0eee7
+  .project
+    background: #fff
+    height: 300px
+    width: auto
+
+section.projects-footer
+  height: 375px
+  background: url(image_path('projects-footer.jpg'))
+  position: relative
+
+  .footer
+    color: #fff
+    border-top: 1px solid #fff
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    margin: 0 auto
+    padding: 10px 0px
