@@ -43,7 +43,8 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
+  # Font awesome
+  gem 'font-awesome-rails', '~> 4.1.0.0'
   # Bootstrap sass
   gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 end

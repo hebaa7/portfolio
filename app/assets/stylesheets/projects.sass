@@ -42,26 +42,52 @@ h5
 /*************************/
 .navbar-default
   background-color: transparent
-  border: none
+  border-bottom: 1px solid white
 
+  // Toggle mode
+  .navbar-toggle
+    border: none
+    .icon-bar
+      background-color: #fff
+    &:hover
+      background-color: transparent
+
+  /*
+   * Main Navigation
+   */
   .navbar-nav
     > li
-      > a, span
+      > a
         color: white
-        padding: 20px 0px 3px
-      a:hover
+      &:hover, &:focus
+        color: white
+      > span
+        color: white
+
+    // Menu items
+    .menu-item
+      font-family: 'Raleway', 'Helvetica', 'Arial'
+      text-transform: uppercase
+      font-size: 12px
+      letter-spacing: 2px
+      a
+        padding: 25px 0px 3px
+        margin-left: 10px
+        margin-right: 10px
+      &:hover, &:focus
         border-bottom: 2px solid white
         color: white
-    .pipe
-      padding: 20px 10px 5px
-      color: white
 
+    // Home and email icons
+    .menu-icon
+      a
+        padding: 15px 10px
+
+  /*
+   * Right navigation
+   */
   .navbar-right
-    > li
-      padding: 10px 5px 5px
-
-
-
+    margin-right: 0px
 
 
 /*************************/
@@ -74,7 +100,7 @@ section.projects
   background-size: cover
   background-repeat: no-repeat
   background-position: center
-  padding: 160px 0px
+  padding: 175px 0px
   height: 430px
 
   hr
