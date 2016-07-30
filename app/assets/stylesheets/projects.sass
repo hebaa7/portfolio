@@ -15,7 +15,7 @@
  */
 
 .container
-  max-width: 900px
+  max-width: 750px
 
 .center
   text-align: center
@@ -26,11 +26,19 @@
 
 h1
   font-family: 'Raleway', 'Helvetica', 'Arial'
-  font-size: 32px
+  font-size: 37px
   margin-bottom: 0px
-  letter-spacing: 5px
-  margin-top: 5px
+  letter-spacing: 7px
+  margin-top: 3px
   font-weight: 600
+
+h2
+  font-family: 'Raleway', 'Helvetica', 'Arial'
+  font-size: 17px
+  margin-bottom: 0px
+  margin-top: 0px
+  letter-spacing: 2px
+  font-weight: 500
 
 h3
   font-family: 'Raleway', 'Helvetica', 'Arial'
@@ -40,12 +48,43 @@ h3
 
 h5
   font-family: 'Raleway', 'Helvetica', 'Arial'
-  font-size: 15px
-  margin-bottom: 0px
+  font-size: 12px
+  margin-bottom: 10px
+  margin-top: 15px
   letter-spacing: 2.5px
+  font-weight: 600
 
 p
-  margin: 0px
+  font-family: 'Raleway', 'Helvetica', 'Arial'
+  font-weight: 200
+  font-size: 12px
+
+hr
+  width: 45px
+  border: 2px solid #fff
+  margin: 20px 0px
+
+
+
+/*
+ * Buttons
+ */
+.btn
+  font-family: 'Raleway', 'Helvetica', 'Arial'
+  font-weight: 500
+  font-size: 11px
+
+// White buttons
+.wht-btn
+  color: #fff
+  border: 2px solid #fff
+  padding: 7px 15px
+  border-radius: 30px
+  letter-spacing: 1px
+  &:hover,
+  &:focus
+    color: #fff
+    text-decoration: none
 
 /*************************/
 /*       Navigation      */
@@ -101,13 +140,12 @@ p
     margin-right: 0px
 
 
-
 /*************************/
 /*         Home          */
 /*************************/
 
 /*
- * Intro
+ * Home header
  */
 section.home-header
   color: #fff
@@ -118,6 +156,8 @@ section.home-header
   padding: 50px 0px
   height: 430px
 
+
+  // Macbook image
   img
     width: 750px
     position: absolute
@@ -125,6 +165,7 @@ section.home-header
     right: 0
     margin: 0 auto
 
+  // Heading and subheading
   .content
     position: absolute
     left: 0
@@ -137,37 +178,207 @@ section.home-header
     border: 2px solid #fff
     margin: 12px 0px 14px
 
-  h1
-    letter-spacing: 7px
-    font-size: 36px
-    margin-top: 3px
-
   p
     font-weight: 100
     letter-spacing: 2px
     font-size: 15px
 
 
+/*
+ * What I do
+ */
+section.what
+  padding: 80px 0px 30px
+
+  // Icons
+  img
+    width: 40px
+
 
 /*
- * What
+ * Recommendations
  */
 
-section.what
-  padding: 80px 0px
+section.recommendations
+  color: #fff
+  background: url(image_path('home/recommendations.jpg'))
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  padding: 60px 0px
+  min-height: 300px
 
-  img
-    width: 50px
+  /*
+   * Carousel
+   */
 
-  h5
-    font-weight: 600
-    font-size: 12px
-    margin-bottom: 10px
-    margin-top: 15px
+  // Controls
+  .carousel-control
+    background-image: none
+    top: 25px
+
+  // Indicators
+  .carousel-indicators
+    bottom: -60px
+    .active
+      background-color: #F15C5E
+      border: 1px solid #F15C5E
+
+  // Content
+  .carousel-inner
+    width: 450px
+    margin-top: 20px
+    margin-bottom: 20px
+
+    // Recommendation
+    .recommendation
+      font-style: italic
+      font-weight: 200
+      line-height: 24px
+      letter-spacing: 0.5px
+      margin-bottom: 20px
+
+    // Author
+    .author
+      font-size: 14px
+      font-weight: 500
+      letter-spacing: 0.5px
+      margin-bottom: 15px
+
+    // Button
+    .recommend-btn
+      margin-top: 15px
+      display: inline-block
+
+/*
+ * Portfolio
+ */
+
+section.portfolio
+  padding: 60px 0px
+
+  hr
+    border: 2px solid #4b4b4b
 
   p
-    font-weight: 200
-    font-size: 12px
+    font-size: 14px
+
+  .project
+    background: gray
+    height: 200px
+    width: auto
+    &:hover
+      opacity: 0.8
+
+  .heba
+    background: url(image_path('home/heba2.jpg'))
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+  .hello
+    background: #EAEAEA
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 33%
+      width: 170px
+
+  .uteeni
+    background: #12272C
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 22%
+      width: 100px
+
+  .harvester
+    background: #07c5be
+    #harvester
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 39%
+      width: 160px
+    #cat
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      bottom: 0
+      width: 100px
+
+  .connectica
+    background: #353535
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 42%
+      width: 160px
+
+  .raja
+    background: #79222D
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 38%
+      width: 185px
+
+/*
+ * Footer
+ */
+
+section.home-footer
+  padding: 50px 0px
+  color: #fff
+  background: url(image_path('home/home-footer.jpg'))
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  min-height: 400px
+  -webkit-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+  -moz-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+  box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+
+  .content
+    padding: 100px 0px
+
+  p
+    font-size: 14px
+    letter-spacing: 0.5px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*************************/
@@ -192,6 +403,7 @@ section.projects-header
     font-weight: 100
     letter-spacing: 1.5px
     font-size: 14px
+    letter-spacing: 0.5px
 
 section.projects
   padding: 60px 0px
@@ -214,7 +426,9 @@ section.projects
   .heba
     height: 400px
 
-
+/*
+ * Footer
+ */
 
 section.projects-footer
   height: 375px
