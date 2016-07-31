@@ -42,7 +42,7 @@ h2
 
 h3
   font-family: 'Raleway', 'Helvetica', 'Arial'
-  font-size: 15px
+  font-size: 14px
   margin-bottom: 0px
   letter-spacing: 2px
 
@@ -141,6 +141,88 @@ hr
 
 
 /*************************/
+/*         Footer        */
+/*************************/
+
+section.footer
+  color: #fff
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  min-height: 380px
+  // -webkit-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+  // -moz-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+  // box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+
+  .container
+    max-width: 900px
+    padding: 50px 0px
+
+  // Heading and subheading
+  .content
+    padding: 60px 0px 40px
+
+  p
+    font-size: 14px
+    letter-spacing: 0.5px
+
+  // Form
+  .form
+    input
+      height: 40px
+    textarea
+      height: 100px
+    input,
+    textarea
+      width: 100%
+      margin: 3px 0px
+      border: none
+      padding: 10px
+      font-family: 'Raleway', 'Helvetica', 'Arial'
+      font-size: 12px
+      font-weight: 400
+
+    .name,
+    .subject
+      width: 49%
+
+    .name
+      float: left
+
+    .subject
+      float: right
+      margin-top: -17px
+
+    // Submit button
+    .submit-btn
+      background: #F15C5E
+      font-size: 16px
+      font-weight: 500
+      border-radius: 0px
+      width: 150px
+      float: right
+      margin-top: 0px
+      font-weight: 500
+      letter-spacing: 1px
+      &:hover,
+      &:focus
+        color: #fff
+
+  // Copyright
+  .container-fluid
+    padding: 0px
+
+  #copyright
+    border-top: 1px solid rgba(255, 255, 255, 0.3)
+    padding: 10px 0px
+    margin-bottom: 0px
+    font-size: 12px
+
+
+
+
+
+/*************************/
 /*         Home          */
 /*************************/
 
@@ -172,6 +254,9 @@ section.home-header
     right: 0
     margin: 0 auto
     padding: 165px 0px
+
+  h3
+    font-size: 15px
 
   hr
     width: 50px
@@ -206,7 +291,7 @@ section.recommendations
   background-repeat: no-repeat
   background-position: center
   padding: 60px 0px
-  min-height: 300px
+  min-height: 400px
 
   /*
    * Carousel
@@ -337,97 +422,66 @@ section.portfolio
  * Footer
  */
 
-section.home-footer
-  padding: 50px 0px 0px
+// Background footer in home page
+body.home
+  section.footer
+    background: url(image_path('home/home-footer.jpg'))
+
+
+
+/*************************/
+/*          About        */
+/*************************/
+
+/*
+ * Intro
+ */
+
+section.about-header
   color: #fff
-  background: url(image_path('home/home-footer.jpg'))
+  background: url(image_path('about/about-header.jpg'))
   background-size: cover
   background-repeat: no-repeat
   background-position: center
-  min-height: 380px
-  -webkit-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
-  -moz-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
-  box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
+  padding: 140px 0px
+  height: 400px
 
-  // Heading and subheading
-  .content
-    padding: 50px 0px 130px
+  hr
+    width: 50px
+    border: 2px solid #fff
+    margin: 12px 0px 14px
 
   p
+    font-weight: 100
+    letter-spacing: 2px
+    font-size: 15px
+
+/*
+ * My story
+ */
+
+section.story
+  padding: 50px 0px
+
+  .container
+    max-width: 700px
+    
+  hr
+    border: 2px solid #4b4b4b
+
+  p
+    line-height: 24px
     font-size: 14px
-    letter-spacing: 0.5px
 
-  // Form
-  .form
-    input
-      height: 40px
-    textarea
-      height: 100px
-    input,
-    textarea
-      width: 100%
-      margin: 3px 0px
-      border: none
-      padding: 10px
-      font-family: 'Raleway', 'Helvetica', 'Arial'
-      font-size: 12px
-      font-weight: 400
+/*
+ * Footer
+ */
 
-    .name,
-    .subject
-      width: 49%
-
-    .name
-      float: left
-
-    .subject
-      float: right
-      margin-top: -17px
-
-    // Submit button
-    .submit-btn
-      background: #F15C5E
-      font-size: 16px
-      font-weight: 500
-      border-radius: 0px
-      width: 150px
-      float: right
-      margin-top: 0px
-      font-weight: 500
-      letter-spacing: 1px
-      &:hover,
-      &:focus
-        color: #fff
-
-  // Copyright
-  .container-fluid
-    padding: 0px
-
-  #copyright
-    border-top: 1px solid rgba(255, 255, 255, 0.3)
-    padding: 10px 0px
-    margin-bottom: 0px
-    font-size: 12px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Footer background in about page
+body.about
+  section.footer
+    background: url(image_path('about/about-footer.jpg'))
+    background-position-y: 25%
 
 
 

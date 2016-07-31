@@ -1,0 +1,34 @@
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="content">
+          <h2>GET IN TOUCH</h2>
+          <hr>
+          <p>Do you have questions or would you like
+            to get more information? Send me a message,
+            and I’ll reply to you as soon as possible.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form">
+          <%= form_tag :root do %>
+
+          <%= text_field_tag :email, params[:email], placeholder: "Email" %><br>
+          <%= text_field_tag :name, params[:name], placeholder: "Name", class: "name" %><br>
+          <%= text_field_tag :subject, params[:subject], placeholder: "Subject", class: "subject" %><br>
+          <%= text_area_tag :message, params[:message], placeholder: "Message" %><br>
+
+           <%= submit_tag "SEND", class: "btn submit-btn" %>
+         <% end %>
+
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <center>
+      <p id="copyright">© Copyright Heba Smit. All rights reserved</p>
+    </center>
+  </div>
+</section>
