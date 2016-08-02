@@ -23,8 +23,10 @@
           </span>
           <% end %>
         </li>
-        <li class="menu-item"><%= link_to "Portfolio", controller: :projects, action: :index %></li>
-        <li class="menu-item"><%= link_to "About" %></li>
+
+        <%= activeable_tag_for :li, "Portfolio", root_path, {class_name: "active"}%>
+        <%= activeable_tag_for :li, "About", about_path, {class_name: "active"}%>
+
       <!-- end of left menu -->
       </ul>
 
