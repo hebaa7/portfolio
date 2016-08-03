@@ -24,8 +24,12 @@
           <% end %>
         </li>
 
-        <%= activeable_tag_for :li, "Portfolio", root_path, {class_name: "active"}%>
-        <%= activeable_tag_for :li, "About", about_path, {class_name: "active"}%>
+        <%= content_tag :li, class: "menu-item" do %>
+          <%= link_to "Portfolio", root_path(anchor: "portfolio"), class: "nav-item"  %>
+        <% end %>
+        <%= content_tag :li, class: "menu-item" do %>
+          <%= link_to "About", about_path, class: "nav-item" %>
+        <% end %>
 
       <!-- end of left menu -->
       </ul>

@@ -355,14 +355,25 @@ section.portfolio
     background: gray
     height: 200px
     width: auto
+    -webkit-transition-delay: box-shadow ease-out 1s
+    -moz-transition-delay: box-shadow ease-out 1s
+    -o-transition-delay: box-shadow ease-out 1s
+    transition-delay: box-shadow ease-out 1s
+
     &:hover
-      opacity: 0.8
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
+      height: 210px
+      width: 210px
 
   .heba
     background: url(image_path('home/heba2.jpg'))
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+
+
 
   .hello
     background: #EAEAEA
