@@ -1,9 +1,20 @@
 class ProjectsController < ApplicationController
-  
-  def index
+
+  def heba
   end
 
-  def show
+  def uteeni
   end
 
+  def raja
+  end
+
+  def hello
+  end
+
+  def connectica
+  end
+
+  def harvester
+  end
 end
