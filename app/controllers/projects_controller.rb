@@ -1,5 +1,8 @@
 class ProjectsController < ApplicationController
 
+  def index
+  end
+
   def heba
   end
 

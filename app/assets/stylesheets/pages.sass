@@ -64,7 +64,8 @@ hr
   border: 2px solid #fff
   margin: 20px 0px
 
-
+a
+  color: gray
 
 /*
  * Buttons
@@ -97,7 +98,7 @@ hr
 
 .navbar-default
   background-color: transparent
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+  border-bottom: none
 
   // Toggle mode
   .navbar-toggle
@@ -122,7 +123,7 @@ hr
     // Menu items
     .menu-item
       font-family: 'Raleway', 'Helvetica', 'Arial'
-      font-weight: 300
+      font-weight: 400
       text-transform: uppercase
       font-size: 12px
       letter-spacing: 2px
@@ -444,85 +445,31 @@ body.about
 /*************************/
 /*       Projects        */
 /*************************/
-//
-// section.projects-header
-//   color: #fff
-//   background: url(image_path('projects-header.jpg'))
-//   background-size: cover
-//   background-repeat: no-repeat
-//   background-position: center
-//   padding: 175px 0px
-//   height: 430px
-//
-//   hr
-//     width: 50px
-//     border: 2px solid #fff
-//     margin: 15px 0px
-//
-//   p
-//     font-weight: 100
-//     letter-spacing: 1.5px
-//     font-size: 14px
-//     letter-spacing: 0.5px
-//
-// section.projects
-//   padding: 60px 0px
-//   background: #EAEAEA
-//   .project
-//     background: gray
-//     height: 300px
-//     width: auto
-//   .uteeni
-//     height: 400px
-//   .harvester
-//     height: 200px
-//   .connectica
-//     height: 280px
-//   .description
-//     height: 300px
-//     background: white
-//   .hello
-//     height: 500px
-//   .heba
-//     height: 400px
-//
-// /*
-//  * Footer
-//  */
-//
-// section.projects-footer
-//   height: 375px
-//   background: url(image_path('projects-footer.jpg'))
-//   position: relative
-//
-//   .footer
-//     color: #fff
-//     border-top: 1px solid #fff
-//     position: absolute
-//     bottom: 0
-//     left: 0
-//     right: 0
-//     margin: 0 auto
-//     padding: 10px 0px
 
-
-/*************************/
-/*       Projects        */
-/*************************/
-
-section.project-content
-  color: #000
-  padding: 60px 0px
+/* Projects display */
+section.projects-header
+  height: 250px
+  padding: 110px 0px 0px
   hr
     border: 2px solid #000
-    width: 40px
-  img
-    padding: 10px
 
+body.projects
+  section.recommendations
+    background: #f4f4f4
+    color: #000
+    hr
+      border: 2px solid #000
+    .quote-mark
+      width: 50px
+      margin-bottom: 10px
+    .carousel-control
+      visibility: hidden
 
+    .carousel-inner
+      width: 600px
 
-section.uteeni
-  background: url(image_path('projects/uteeni-header.jpg'))
+/* Individual project header */
+section.project-header
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -532,19 +479,69 @@ section.uteeni
   img
     width: 65px
     height: auto
-    padding-left: 7px
-    padding-right: 7px
+    padding-left: 10px
+    padding-right: 10px
 
+
+/* Individual project content */
+section.project-content
+  color: #000
+  padding: 40px 0px
+  h2
+    margin-bottom: 15px
+
+  .container
+    max-width: 900px
+
+  /* Link to project site */
+  .view-site
+    margin-top: 30px
+    display: block
+
+
+/* Individual projects footer */
+body.projects
+  section.footer
+    background: #272827
+
+
+/* Project Uteeni */
+section.uteeni-header
+  background: url(image_path('projects/uteeni-header.jpg'))
+
+  /* Pencil icon */
   .design-icon
     opacity: 0.5
 
+section.uteeni-content
 
-body.projects
-  section.footer
-    background: #110F15
+  /* Content text */
+  .about
+    padding-top: 70px
+  .skills
+    padding-top: 100px
+  .challenges
+    padding-top: 40px
 
+  /* Content images */
+  .uteeni-listing
+    width: 250px
+    margin-left: 50px
 
+  /* Table for link */
+  .table-row
+    display: table
+    float: none
+    position: relative
 
+  .table-column
+    display: table-cell
+    float: none
+
+  .view-site
+    position: absolute
+    right: 0
+    bottom: 10px
 
 /*************************/
 /*         Media         */

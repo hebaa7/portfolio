@@ -1,6 +1,6 @@
-<section class="uteeni">
+<section class="project-header uteeni-header">
   <center>
-    <div class="content">
+    <div class="content trigger">
       <h3>PROJECT</h3>
       <h1>UTEENI
       </h1>
@@ -12,25 +12,39 @@
   </center>
 </section>
 
-<section class="project-content">
-  <center>
-    <div class="container">
-      <h2>ABOUT</h2>
-      <hr>
-      <p>UTEENI is a business directory service that lets business owners register their business and services so they can be found online.</p>
-      <p>In collaboration with a team of backend developers and designer, this project took 6 months until its first release in May 2016.</p>
-      <%= image_tag('projects/uteeni-work.png', class: "img-responsive") %>
-      <h2>SKILLS</h2>
-      <hr>
-      <p>Frontend web development (HTML, CSS, JavaScript, Ruby on Rails), responsive design and development, UX design, user testing.</p>
-      <p>*Design and backend development is credited to the UTEENI team.</p>
-      <%= image_tag('projects/uteeni-work2.jpg', class: "img-responsive gallery") %>
-      <!-- <%= image_tag('projects/uteeni-work3.jpg', class: "img-responsive gallery-img") %> -->
-      <h2>CHALLENGES</h2>
-      <hr>
-      <p>This was my first Rails project, so I had to familiarize with and feel comfortable using Ruby on Rails on the fronend, pull and send data, and build forms.</p>
-      <%= link_to "view www.uteeni.com", 'http://www.uteeni.com', target: "_blank" %>
+<section class="project-content uteeni-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 about">
+        <h2>ABOUT</h2>
+        <p>UTEENI is a business directory service that lets business owners register their business and services so they can be found online.</p>
+        <p>In collaboration with a team of backend developers and designer, this project took 6 months until its first release in May 2016.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <%= image_tag('projects/uteeni-home.png', class: "img-responsive") %>
+      </div>
     </div>
 
-  </center>
+    <div class="row">
+      <div class="col-sm-6 ">
+        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive uteeni-listing") %>
+      </div>
+      <div class="col-sm-6 skills">
+        <h2>SKILLS</h2>
+        <p>Frontend web development (HTML, CSS, JavaScript, Ruby on Rails), responsive design and development, UX design, user testing.</p>
+        <p>*Design and backend development is credited to the UTEENI team.</p>
+      </div>
+    </div>
+
+    <div class="row table-row">
+      <div class="col-sm-6 challenges table-column">
+        <h2>CHALLENGES</h2>
+        <p>This was my first Rails project, so I had to familiarize with and feel comfortable using Ruby on Rails on the frontend, pull and send data, and build forms.</p>
+      </div>
+      <div class="col-sm-6 table-column">
+        <%= link_to "view www.uteeni.com", 'http://www.uteeni.com', target: "_blank", class: "view-site" %>
+      </div>
+    </div>
+  </div>
 </section>
