@@ -5,25 +5,21 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
-
 /*************************/
 /*    General Styles     */
 /*************************/
 
-/*
- * Containers
- */
-
+// Containers
 .container
-  max-width: 750px
+  max-width: 800px
 
+
+// Alignment
 .center
   text-align: center
 
-/*
- * Fonts
- */
 
+// Fonts
 h1
   font-family: 'Raleway', 'Helvetica', 'Arial'
   font-size: 37px
@@ -57,50 +53,51 @@ h5
 p
   font-family: 'Raleway', 'Helvetica', 'Arial'
   font-weight: 200
-  font-size: 12px
+  font-size: 14px
+  line-height: 24px
 
 hr
-  width: 45px
+  width: 40px
   border: 2px solid #fff
   margin: 20px 0px
 
+
+// Buttons and links
 a
   color: gray
+  &:hover,
+  &:focus,
+  &:active
+    color: red
 
-/*
- * Buttons
- */
 
 .btn
   font-family: 'Raleway', 'Helvetica', 'Arial'
   font-weight: 500
   font-size: 11px
 
-// White buttons
-.wht-btn
-  color: #fff
-  border: 2px solid #fff
-  padding: 7px 15px
-  border-radius: 30px
-  letter-spacing: 1px
-  &:hover,
-  &:focus
-    color: #fff
-    text-decoration: none
+// .wht-btn
+//   color: #fff
+//   border: 2px solid #fff
+//   padding: 7px 15px
+//   border-radius: 30px
+//   letter-spacing: 1px
+//   &:hover,
+//   &:focus
+//     color: #fff
+//     text-decoration: none
+
 
 /*************************/
 /*       Navigation      */
 /*************************/
-// Anchor link to portfolio
-#portfolio
-  position: absolute
-  margin-top: -50px
 
+// Main navigation
 .navbar-default
   background-color: transparent
   border-bottom: none
 
-  // Toggle mode
+  // Hamburger icon
   .navbar-toggle
     border: none
     &:hover
@@ -108,20 +105,24 @@ a
     .icon-bar
       background-color: #fff
 
-  /*
-   * Main Navigation
-   */
+  // Navbar (right)
+  .navbar-right
+    margin-right: 0px
+
+  // Navbar links (left; see also navbar.js)
   .navbar-nav
     > li
       > a
         color: white
-        &:hover, &:focus
+        &:hover,
+        &:focus,
+        &:active
           color: white
       > span
         color: white
 
-    // Menu items
-    .menu-item
+    // Links (text)
+    li.menu-item
       font-family: 'Raleway', 'Helvetica', 'Arial'
       font-weight: 400
       text-transform: uppercase
@@ -131,20 +132,15 @@ a
         padding: 25px 0px 3px
         margin-left: 10px
         margin-right: 10px
-        &:hover, &:focus
-          // border-bottom: 2px solid white
+        &:hover,
+        &:focus,
+        &:active
           color: white
 
-    // Home and email icons
-    .menu-icon
+    // Links (icons)
+    li.menu-icon
       a
         padding: 15px 10px
-
-  /*
-   * Right navigation
-   */
-  .navbar-right
-    margin-right: 0px
 
 
 /*************************/
@@ -157,9 +153,6 @@ section.footer
   background-repeat: no-repeat
   background-position: center
   min-height: 380px
-  // -webkit-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
-  // -moz-box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
-  // box-shadow: 0px -10px 25px 0px rgba(189,189,189,1)
 
   .container
     max-width: 900px
@@ -169,11 +162,7 @@ section.footer
   .content
     padding: 60px 0px 40px
 
-  p
-    font-size: 14px
-    letter-spacing: 0.5px
-
-  // Form
+  // Contact form
   .form
     input
       height: 40px
@@ -213,7 +202,9 @@ section.footer
       letter-spacing: 1px
       &:hover,
       &:focus
+      &:active
         color: #fff
+        background: yellow
 
   // Copyright
   .container-fluid
@@ -230,9 +221,7 @@ section.footer
 /*         Home          */
 /*************************/
 
-/*
- * Home header
- */
+// Header
 section.home-header
   color: #fff
   background: url(image_path('home/home-header.jpg'))
@@ -241,7 +230,6 @@ section.home-header
   background-position: center
   padding: 50px 0px
   height: 430px
-
 
   // Macbook image
   img
@@ -273,10 +261,8 @@ section.home-header
     font-size: 15px
 
 
-/*
- * What I do
- */
-section.what
+// Skills
+section.skills
   padding: 80px 0px 30px
 
   // Icons
@@ -284,27 +270,38 @@ section.what
     width: 40px
 
 
-/*
- * Recommendations
- */
-
+// Recommendations
 section.recommendations
   color: #fff
-  background: url(image_path('home/recommendation-header2.jpg'))
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
+  background: #f4f4f4
+  color: #2F4148
   padding: 60px 0px
   min-height: 375px
 
-  /*
-   * Carousel
-   */
+  hr
+    border: 2px solid #2F4148
+
+  .quote-mark
+    width: 50px
+    margin-bottom: 10px
+
+
+
+  // Carousel
 
   // Controls
   .carousel-control
     background-image: none
-    top: 25px
+    top: 0px
+    opacity: 0.5
+    color: #F4F4F4
+    font-size: 35px
+    &:hover,
+      color: #2F4148
+      opacity: 1
+
+
+
 
   // Indicators
   .carousel-indicators
@@ -315,15 +312,14 @@ section.recommendations
 
   // Content
   .carousel-inner
-    width: 450px
+    width: 700px
     margin-top: 20px
-    margin-bottom: 20px
 
     // Recommendation
     .recommendation
       font-style: italic
       font-weight: 200
-      line-height: 24px
+      line-height: 32px
       letter-spacing: 0.5px
       margin-bottom: 20px
 
@@ -334,24 +330,17 @@ section.recommendations
       letter-spacing: 0.5px
       margin-bottom: 15px
 
-    // Button
-    .recommend-btn
-      margin-top: 15px
-      display: inline-block
 
-/*
- * Portfolio
- */
 
+
+// portfolio
 section.portfolio
   padding: 60px 0px
 
   hr
     border: 2px solid #4b4b4b
 
-  p
-    font-size: 14px
-
+  // Project
   .project
     background: gray
     width: 220px
@@ -360,13 +349,14 @@ section.portfolio
     img
       height: 220px
       width: 220px
-
       -webkit-transition-delay: box-shadow ease-out 1s
       -moz-transition-delay: box-shadow ease-out 1s
       -o-transition-delay: box-shadow ease-out 1s
       transition-delay: box-shadow ease-out 1s
 
-      &:hover
+      &:hover,
+      &:active,
+      &:focus
         -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
@@ -376,11 +366,8 @@ section.portfolio
         margin-left: -5px
 
 
-/*
- * Footer
- */
 
-// Background footer in home page
+// Footer (home)
 body.home
   section.footer
     background: url(image_path('home/home-footer.jpg'))
@@ -391,10 +378,7 @@ body.home
 /*          About        */
 /*************************/
 
-/*
- * Intro
- */
-
+// Header
 section.about-header
   color: #fff
   background: url(image_path('about/about-header.jpg'))
@@ -414,10 +398,7 @@ section.about-header
     letter-spacing: 2px
     font-size: 15px
 
-/*
- * My story
- */
-
+// Story
 section.story
   padding: 50px 0px
 
@@ -427,15 +408,7 @@ section.story
   hr
     border: 2px solid #4b4b4b
 
-  p
-    line-height: 24px
-    font-size: 14px
-
-/*
- * Footer
- */
-
-// Footer background in about page
+// Footer (About)
 body.about
   section.footer
     background: url(image_path('about/about-footer.jpg'))
@@ -443,30 +416,19 @@ body.about
 
 
 /*************************/
-/*       Projects        */
+/*       Portfolio       */
 /*************************/
 
-/* Projects display */
+// Header
 section.projects-header
   height: 250px
   padding: 110px 0px 0px
+
   hr
-    border: 2px solid #000
+    border: 2px solid #2F4148
 
-body.projects
-  section.recommendations
-    background: #f4f4f4
-    color: #000
-    hr
-      border: 2px solid #000
-    .quote-mark
-      width: 50px
-      margin-bottom: 10px
-    .carousel-control
-      visibility: hidden
+// Portfolio
 
-    .carousel-inner
-      width: 600px
 
 /* Individual project header */
 section.project-header
@@ -485,7 +447,7 @@ section.project-header
 
 /* Individual project content */
 section.project-content
-  color: #000
+  color: #2F4148
   padding: 40px 0px
   h2
     margin-bottom: 15px
