@@ -15,7 +15,7 @@
 <section class="project-content uteeni-content">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 about">
+      <div class="col-sm-6 about text">
         <h2>ABOUT</h2>
         <p>UTEENI is a business directory service that lets business owners register their business and services so they can be found online.</p>
         <p>In collaboration with a team of backend developers and designer, this project took 6 months until its first release in May 2016.</p>
@@ -30,15 +30,22 @@
       <div class="col-sm-6 ">
         <%= image_tag('projects/uteeni-listings.png', class: "img-responsive uteeni-listing") %>
       </div>
-      <div class="col-sm-6 skills">
+      <div class="col-sm-6 text skills">
         <h2>SKILLS</h2>
-        <p>Frontend web development (HTML, CSS, JavaScript, Ruby on Rails), responsive design and development, UX design, user testing.</p>
-        <p>*Design and backend development is credited to the UTEENI team.</p>
+        <p>
+          <ul>
+            <li>Frontend web development (HTML, CSS, JavaScript, Ruby on Rails)</li>
+            <li>responsive design and development<li>
+            <li>UX design</li>
+            <li>user testing</li>
+            <strong>Design and backend development is credited to the UTEENI team.</strong>
+          </ul>
+        </p>
       </div>
     </div>
 
     <div class="row table-row">
-      <div class="col-sm-6 challenges table-column">
+      <div class="col-sm-6 challenges text table-column">
         <h2>CHALLENGES</h2>
         <p>This was my first Rails project, so I had to familiarize with and feel comfortable using Ruby on Rails on the frontend, pull and send data, and build forms.</p>
       </div>
@@ -48,3 +55,5 @@
     </div>
   </div>
 </section>
+
+<%= render 'partials/portfolio_more_2' %>

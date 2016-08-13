@@ -18,17 +18,17 @@
       <ul class="nav navbar-nav">
         <li class="menu-icon" id="home-icon">
           <%= link_to root_path do %>
-          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+          <span class="<%= current_page?(portfolio_path) ? ' ' : 'nav-icon' %>">
             <i class="fa fa-home" aria-hidden="true"></i>
           </span>
           <% end %>
         </li>
 
         <%= content_tag :li, class: "menu-item" do %>
-          <%= link_to "Portfolio", portfolio_path, class:"#{current_page?(root_path) ? 'nav-item' : ' '}"  %>
+          <%= link_to "Portfolio", portfolio_path, class:"#{current_page?(portfolio_path) ? ' ' : 'nav-item'}"  %>
         <% end %>
         <%= content_tag :li, class: "menu-item" do %>
-          <%= link_to "About", about_path, class:"#{current_page?(root_path) ? 'nav-item' : ' '}" %>
+          <%= link_to "About", about_path, class:"#{current_page?(portfolio_path) ? '' : 'nav-item'}" %>
         <% end %>
       </ul>
       <!-- end of left menu -->
@@ -36,8 +36,8 @@
       <!-- right menu -->
       <ul class="nav navbar-nav navbar-right">
         <li class="menu-icon">
-          <%= link_to root_path do %>
-          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+          <%= link_to anchor:"contact" do %>
+          <span class="<%= current_page?(portfolio_path) ? ' ' : 'nav-icon' %>">
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </span>
           <% end %>
@@ -45,7 +45,7 @@
         <!-- Facebook -->
         <li class="menu-icon">
           <%= link_to "https://www.facebook.com/heba.smit", target:"_blank" do %>
-          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+          <span class="<%= current_page?(portfolio_path) ? ' ' : 'nav-icon' %>">
             <i class="fa fa-facebook" aria-hidden="true"></i>
           </span>
           <% end %>
@@ -53,7 +53,7 @@
         <!-- Linkedin -->
         <li class="menu-icon">
           <%= link_to "https://www.linkedin.com/in/heba-smit-176994b1?trk=nav_responsive_tab_profile_pic", target:"_blank" do %>
-          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+          <span class="<%= current_page?(portfolio_path) ? ' ' : 'nav-icon' %>">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
           </span>
           <% end %>
