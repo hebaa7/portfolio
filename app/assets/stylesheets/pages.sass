@@ -35,6 +35,7 @@ h2
   margin-top: 0px
   letter-spacing: 2px
   font-weight: 600
+  color: #2F4148
 
 h3
   font-family: 'Raleway', 'Helvetica', 'Arial'
@@ -62,31 +63,25 @@ hr
   border: 2px solid #fff
   margin: 20px 0px
 
+// Headings and subheadings
+.subheading
+  max-width: 400px
 
-// Buttons and links
-a
-  color: gray
-  &:hover,
-  &:focus,
-  &:active
-    color: red
-
-
+// Buttons
 .btn
   font-family: 'Raleway', 'Helvetica', 'Arial'
   font-weight: 500
   font-size: 11px
 
-// .wht-btn
-//   color: #fff
-//   border: 2px solid #fff
-//   padding: 7px 15px
-//   border-radius: 30px
-//   letter-spacing: 1px
-//   &:hover,
-//   &:focus
-//     color: #fff
-//     text-decoration: none
+.fa
+  -webkit-transition: color ease-out 0.2s
+  -moz-transition: color ease-out 0.2s
+  -o-transition: color ease-out 0.2s
+
+  &:hover,
+  &:focus,
+  &:active
+    color: #FAB45D
 
 
 /*************************/
@@ -97,6 +92,10 @@ a
 #port-nav
   border-bottom: none
   border-bottom: none
+
+  .container-fluid
+    padding-left: 30px
+    padding-right: 30px
 
   // Hamburger icon
   .navbar-toggle
@@ -114,14 +113,18 @@ a
   .navbar-nav
     li
       > a
-        padding: 25px 0px
+        padding: 25px 5px
         margin-left: 10px
         margin-right: 10px
         color: #2F4148
+        -webkit-transition: color ease-out 0.2s
+        -moz-transition: color ease-out 0.2s
+        -o-transition: color ease-out 0.2s
+
         &:hover,
         &:focus,
         &:active
-          color: #2F4148
+          color: #FAB45D
 
     // Navbar items
     li.menu-item
@@ -147,13 +150,9 @@ a
   // Navbar links (see also navbar.js)
   .navbar-nav
     > li
-      font-weight: 300
+      font-weight: 400
       > a
         color: white
-        &:hover,
-        &:focus,
-        &:active
-          color: white
       > span
         color: white
 
@@ -177,11 +176,14 @@ a
 
 section.footer
   color: #fff
-  background: #283337
+  background-color: #283337
   background-size: cover
   background-repeat: no-repeat
   background-position: center
   min-height: 380px
+
+  h2
+    color: #fff
 
   .contact-wrapper
     max-width: 900px
@@ -207,9 +209,10 @@ section.footer
       padding: 10px
       font-family: 'Raleway', 'Helvetica', 'Arial'
       font-size: 11px
-      text-transform: uppercase
       letter-spacing: 1px
       font-weight: 500
+      outline: none
+      color: #2F4148
 
     .name,
     .subject
@@ -225,6 +228,7 @@ section.footer
     // Submit button
     .submit-btn
       background: #F15C5E
+      color: #fff
       font-size: 16px
       font-weight: 500
       border-radius: 0px
@@ -233,11 +237,16 @@ section.footer
       margin-top: 0px
       font-weight: 500
       letter-spacing: 2px
+      -webkit-transition: background ease-out 0.2s
+      -moz-transition: background ease-out 0.2s
+      -o-transition: background ease-out 0.2s
+
       &:hover,
       &:focus,
       &:active
         color: #fff
         background: #FAB45D
+
 
   // Copyright
   .container-fluid
@@ -310,6 +319,7 @@ section.home-header
     font-weight: 100
     letter-spacing: 2px
     font-size: 15px
+    color: #fff
 
 
 // Skills
@@ -328,6 +338,10 @@ section.recommendations
   color: #2F4148
   padding: 60px 0px
   min-height: 375px
+
+  .container
+    max-width: 100%
+
   h2
     margin-bottom: 30px
 
@@ -348,25 +362,24 @@ section.recommendations
     color: #F4F4F4
     font-size: 35px
     &:hover,
+    &:active,
+    &:focus
       color: #2F4148
       opacity: 1
-
-  // Indicators
-  .carousel-indicators
-    bottom: -60px
-    .active
-      background-color: #F15C5E
-      border: 1px solid #F15C5E
+    .fa
+      &:hover,
+      &:active,
+      &:focus
+        color: #2F4148
 
   // Content
   .carousel-inner
-    width: 700px
+    max-width: 700px
     margin-top: 20px
 
     // Recommendation
     .recommendation
       font-style: italic
-      font-weight: 200
       line-height: 32px
       letter-spacing: 0.5px
       margin-bottom: 20px
@@ -379,7 +392,7 @@ section.recommendations
       margin-bottom: 15px
 
 
-// portfolio
+// portfolio partial
 section.portfolio
   padding: 60px 0px
 
@@ -417,9 +430,9 @@ section.portfolio
 
 
 // Footer (home)
-body.home
-  section.footer
-    background: url(image_path('home/home-footer.jpg'))
+// body.home
+//   section.footer
+//     background-image: url(image_path('home/home-footer2.jpg'))
 
 // Portfolio more
 section.portfolio.more
@@ -452,6 +465,7 @@ section.about-header
     font-weight: 100
     letter-spacing: 2px
     font-size: 15px
+    color: #fff
 
 // Story
 section.story
@@ -464,10 +478,10 @@ section.story
     border: 2px solid #4b4b4b
 
 // Footer (About)
-body.about
-  section.footer
-    background: url(image_path('about/about-footer.jpg'))
-    background-position-y: 25%
+// body.about
+//   section.footer
+//     background: url(image_path('about/about-footer3.jpg'))
+//     background-position-y: 25%
 
 
 /*************************/
@@ -480,6 +494,9 @@ body.about
 section.portfolio-header
   height: 250px
   padding: 110px 0px 0px
+
+  h1, h3
+    color: #2F4148
 
   hr
     border: 2px solid #2F4148
@@ -549,6 +566,15 @@ section.project-content
     position: absolute
     right: 0
     bottom: 10px
+    -webkit-transition: all ease-out 0.1s
+    -moz-transition: all ease-out 0.1s
+    -o-transition: all ease-out 0.1s
+
+    &:hover,
+    &:focus,
+    &:active
+      text-decoration: none
+      color: #FAB45D
 
 /* Projects */
 
@@ -586,26 +612,137 @@ section.raja
 
 
 
-
-
-
 /*************************/
 /*         Media         */
 /*************************/
 
-@media (max-width: 992px)
+@media (max-width: 536px)
+  // Bootstrap column adjustment
+  .col-xxs-12
+    width: 100%
 
+  /* Portfolio partial */
   section.portfolio
+    .heba,
+    .uteeni,
+    .connetica,
+    .harvester,
+    .raja,
+    .hello
+      float: initial
+
+@media (min-width: 537px) and (max-width: 767px)
+  /* Portfolio partial */
+  section.portfolio
+    .heba,
+    .uteeni,
+    .connectica
+      float: right
+    .hello,
+    .harvester,
+    .raja
+      float: left
+
+  /* Portfolio more partial */
+  section.portfolio.more
+    .harvester,
+    .raja,
+      float: right
+    .connectica
+      float: left
+
+
+@media (max-width: 767px)
+
+  /* Project */
+  section.project-content
+    .text
+      text-align: center
+      padding: 0px 0px 30px
+      max-width: 550px
+      margin: 0 auto
+
+    .table-row
+      max-width: 550px
+      margin: 0 auto
+
+    .text
+      ul
+        text-align: left
+        margin: 0 auto
+        max-width: 300px
+        padding-left: 0px
+
+    .credit
+      max-width: 340px
+      margin: 10px auto 0px
+
+    .project-mobile
+      margin: 0 auto
+
+    .table-column
+      display: initial
+      float: initial
+
+    .view-site
+      position: initial
+      margin: 0 auto
+      text-align: center
+
+  /* Footer */
+  section.footer
+    .contact-wrapper
+      max-width: 500px
+      padding: 20px 0px 35px
+    .navbar-nav
+      display: none
+    #copyright
+      color: #353535
+      padding: 8px 0px
+      font-weight: 500
+
+
+@media (max-width: 991px)
+
+  /* General styles */
+  .container
+    width: 95%
+
+  /* Home */
+
+  section.home-header
+    height: 375px
+    .content
+      padding: 80px 0px
+
+    // Hide mac in small screens
+    img
+      display: none
+
+  // Skills
+  .skill
+    margin-bottom: 30px
+
+  // Recommendations
+  section.recommendations
+    .carousel-control
+      display: none
+
+
+
+/* Portfolio */
+  section.portfolio
+
     .project
       width: 100%
       height: auto
       img
         width: 100%
         height: auto
-        -webkit-transition-delay: none
-        -moz-transition-delay: none
-        -o-transition-delay: none
-        transition-delay: none
+        -webkit-transition: none
+        -moz-transition: none
+        -o-transition: none
+        transition: none
 
         &:hover
           -webkit-box-shadow: none

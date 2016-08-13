@@ -3,13 +3,13 @@
 <!-- Intro -->
 <section class="home-header">
   <center>
-      <%= image_tag('home/macbook-header2.png', id: "trigger") %>
+      <%= image_tag('home/macbook-header2.png', id: "trigger macbook-home") %>
       <div class="content">
         <h3>HI, I'M</h3>
         <h1>HEBA
         </h1>
         <hr>
-        <p>I am a web designer and frontend developer. <br> I bring ideas to life.</p>
+        <p class="subheading">I am a web designer and frontend developer. I bring ideas to life.</p>
     </div>
   </center>
 </section>
@@ -19,24 +19,26 @@
 <section class="skills">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 center">
-        <%= image_tag('home/development.png') %>
-        <br>
-        <h5>DEVELOPMENT</h5>
-        <p>I work frontend with HTML, CSS and Javascript, but I’ve also created web apps with Ruby on Rails.</p>
-      </div>
-      <div class="col-sm-4 center">
-        <%= image_tag('home/responsive.png') %>
-        <br>
-        <h5>RESPONSIVE</h5>
-        <p>I think mobile first. That way I can make sure that my work looks great on all devices and desktops.</p>
-      </div>
-      <div class="col-sm-4 center">
-        <%= image_tag('home/design.png') %>
-        <br>
-        <h5>DESIGN</h5>
-        <p>Design is my passion. I use the latest UX/UI design principles to give users a great online experience.</p>
-      </div>
+      <center>
+        <div class="col-sm-4 skill">
+          <!-- <%= image_tag('home/development.png') %>
+          <br> -->
+          <h5>DEVELOPMENT</h5>
+          <p>I work frontend with HTML, CSS and Javascript, but I’ve also created web apps with Ruby on Rails.</p>
+        </div>
+        <div class="col-sm-4 skill">
+          <!-- <%= image_tag('home/responsive.png') %>
+          <br> -->
+          <h5>RESPONSIVE</h5>
+          <p>I think mobile first. That way I can make sure that my work looks great on all devices and desktops.</p>
+        </div>
+        <div class="col-sm-4 skill">
+          <!-- <%= image_tag('home/design.png') %>
+          <br> -->
+          <h5>DESIGN</h5>
+          <p>Design is my passion. I use the latest UX/UI design principles to give users a great online experience.</p>
+        </div>
+    </center>
     </div>
   </div>
 </section>
@@ -52,10 +54,10 @@
       <div class="content">
         <h2>PORTFOLIO</h2>
         <hr>
-        <p>View a collection of my latest and favorite design and<br> development projects</p>
+        <p class="subheading">View a collection of my latest and favorite design and development projects</p>
       </div><!-- end of content -->
       <br>
-      
+
       <%= render 'partials/portfolio' %>
 
     </center>

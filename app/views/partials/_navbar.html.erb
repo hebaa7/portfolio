@@ -28,20 +28,19 @@
           <%= link_to "Portfolio", portfolio_path, class:"#{current_page?(portfolio_path) ? ' ' : 'nav-item'}"  %>
         <% end %>
         <%= content_tag :li, class: "menu-item" do %>
-          <%= link_to "About", about_path, class:"#{current_page?(portfolio_path) ? '' : 'nav-item'}" %>
+          <%= link_to "My Story", about_path, class:"#{current_page?(portfolio_path) ? ' ' : 'nav-item'}" %>
         <% end %>
       </ul>
       <!-- end of left menu -->
 
       <!-- right menu -->
       <ul class="nav navbar-nav navbar-right">
-        <li class="menu-icon">
-          <%= link_to anchor:"contact" do %>
-          <span class="<%= current_page?(portfolio_path) ? ' ' : 'nav-icon' %>">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </span>
-          <% end %>
-        </li>
+
+        <!-- contact -->
+        <%= content_tag :li, class: "menu-item" do %>
+          <%= link_to "Contact", root_path(anchor:"contact"), class:"#{current_page?(portfolio_path) ? ' ' : 'nav-item'}" %>
+        <% end %>
+
         <!-- Facebook -->
         <li class="menu-icon">
           <%= link_to "https://www.facebook.com/heba.smit", target:"_blank" do %>
@@ -50,6 +49,7 @@
           </span>
           <% end %>
         </li>
+
         <!-- Linkedin -->
         <li class="menu-icon">
           <%= link_to "https://www.linkedin.com/in/heba-smit-176994b1?trk=nav_responsive_tab_profile_pic", target:"_blank" do %>
@@ -58,9 +58,11 @@
           </span>
           <% end %>
         </li>
+
+
       </ul>
       <!-- end of right menu -->
-    </div><!-- end of navbar collapse -->
 
+    </div><!-- end of navbar collapse -->
   </div><!-- end of container-fluid -->
 </nav><!-- end of main navigation -->
