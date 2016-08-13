@@ -1,5 +1,5 @@
-<section class="footer">
-  <div class="container">
+<section class="footer" id="contact">
+  <div class="container contact-wrapper">
     <div class="row">
       <div class="col-sm-6">
         <div class="content">
@@ -27,8 +27,45 @@
     </div>
   </div>
   <div class="container-fluid">
-    <center>
+    <div class="container copyright-wrapper">
+      <ul class="nav navbar-nav">
+        <li class="menu-icon" id="home-icon">
+          <%= link_to root_path do %>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </span>
+          <% end %>
+        </li>
+      </ul>
+
       <p id="copyright">© Copyright Heba Smit. All rights reserved</p>
-    </center>
-  </div>
-</section>
+
+      <!-- right menu -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="menu-icon">
+          <%= link_to root_path do %>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+          <% end %>
+        </li>
+        <!-- Facebook -->
+        <li class="menu-icon">
+          <%= link_to "https://www.facebook.com/heba.smit", target:"_blank" do %>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </span>
+          <% end %>
+        </li>
+        <!-- Linkedin -->
+        <li class="menu-icon">
+          <%= link_to "https://www.linkedin.com/in/heba-smit-176994b1?trk=nav_responsive_tab_profile_pic", target:"_blank" do %>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </span>
+          <% end %>
+        </li>
+      </ul>
+    </div><!-- end of container -->
+  </div><!-- end of container-fluid -->
+</section><!-- end of footer -->

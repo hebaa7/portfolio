@@ -11,7 +11,7 @@
 
 // Containers
 .container
-  max-width: 800px
+  max-width: 900px
 
 
 // Alignment
@@ -92,9 +92,9 @@ a
 /*       Navigation      */
 /*************************/
 
-// Main navigation
-.navbar-default
-  background-color: transparent
+#main-nav,
+#port-nav
+  border-bottom: none
   border-bottom: none
 
   // Hamburger icon
@@ -109,9 +109,44 @@ a
   .navbar-right
     margin-right: 0px
 
-  // Navbar links (left; see also navbar.js)
+  // Navbar (right)
+  .navbar-nav
+    li
+      > a
+        padding: 25px 0px
+        margin-left: 10px
+        margin-right: 10px
+        color: #2F4148
+        &:hover,
+        &:focus,
+        &:active
+          color: #2F4148
+
+    // Navbar items
+    li.menu-item
+      font-size: 12px
+      font-family: 'Raleway', 'Helvetica', 'Arial'
+      text-transform: uppercase
+      letter-spacing: 2px
+      margin-top: 2px
+
+    // Menu icons
+    li.menu-icon
+      font-size: 15px
+
+    // Home icon
+    li#home-icon
+      font-size: 18px
+
+
+// Main navigation
+#main-nav
+  background-color: transparent
+
+  // Navbar links (see also navbar.js)
   .navbar-nav
     > li
+      font-weight: 300
       > a
         color: white
         &:hover,
@@ -121,26 +156,18 @@ a
       > span
         color: white
 
-    // Links (text)
-    li.menu-item
-      font-family: 'Raleway', 'Helvetica', 'Arial'
-      font-weight: 400
-      text-transform: uppercase
-      font-size: 12px
-      letter-spacing: 2px
-      a
-        padding: 25px 0px 3px
-        margin-left: 10px
-        margin-right: 10px
-        &:hover,
-        &:focus,
-        &:active
-          color: white
 
-    // Links (icons)
-    li.menu-icon
-      a
-        padding: 15px 10px
+// Portfolio navigation
+#port-nav
+  background-color: #fff
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(79,79,79,1)
+  -moz-box-shadow: 0px 5px 20px -5px rgba(79,79,79,1)
+  box-shadow: 0px 5px 20px -5px rgba(79,79,79,1)
+
+  .navbar-nav
+    > li
+      font-weight: 500
+
 
 
 /*************************/
@@ -149,18 +176,19 @@ a
 
 section.footer
   color: #fff
+  background: asset_url('footer.jpg')
   background-size: cover
   background-repeat: no-repeat
   background-position: center
   min-height: 380px
 
-  .container
+  .contact-wrapper
     max-width: 900px
-    padding: 50px 0px
+    padding: 50px 0px 40px
 
   // Heading and subheading
   .content
-    padding: 60px 0px 40px
+    padding: 20px 0px
 
   // Contact form
   .form
@@ -176,7 +204,9 @@ section.footer
       padding: 10px
       font-family: 'Raleway', 'Helvetica', 'Arial'
       font-size: 12px
-      font-weight: 400
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-weight: 500
 
     .name,
     .subject
@@ -206,15 +236,33 @@ section.footer
         color: #fff
         background: yellow
 
+
   // Copyright
   .container-fluid
     padding: 0px
+
+  .copyright-wrapper
+    padding: 0px
+
+    li.menu-icon
+      z-index: 1
+      a
+        color: #fff
+        &:hover,
+        &:focus,
+        &:active
+          background: none
 
   #copyright
     border-top: 1px solid rgba(255, 255, 255, 0.3)
     padding: 10px 0px
     margin-bottom: 0px
     font-size: 12px
+    position: absolute
+    left: 0
+    right: 0
+    text-align: center
+
 
 
 /*************************/

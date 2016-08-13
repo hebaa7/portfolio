@@ -1,4 +1,5 @@
-<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+<nav id="<%= current_page?(portfolio_path) ? 'port-nav' : 'main-nav'%>" class="navbar navbar-default navbar-fixed-top">
+
   <div class="container-fluid">
 
     <!-- Brand -->
@@ -15,38 +16,51 @@
     <div class="collapse navbar-collapse">
       <!-- left menu -->
       <ul class="nav navbar-nav">
-        <li class="menu-icon">
+        <li class="menu-icon" id="home-icon">
           <%= link_to root_path do %>
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-home fa-stack-1x" aria-hidden="true"></i>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-home" aria-hidden="true"></i>
           </span>
           <% end %>
         </li>
 
         <%= content_tag :li, class: "menu-item" do %>
-          <%= link_to "Portfolio", portfolio_path, class: "nav-item"  %>
+          <%= link_to "Portfolio", portfolio_path, class:"#{current_page?(root_path) ? 'nav-item' : ' '}"  %>
         <% end %>
         <%= content_tag :li, class: "menu-item" do %>
-          <%= link_to "About", about_path, class: "nav-item" %>
+          <%= link_to "About", about_path, class:"#{current_page?(root_path) ? 'nav-item' : ' '}" %>
         <% end %>
-
-      <!-- end of left menu -->
       </ul>
+      <!-- end of left menu -->
 
       <!-- right menu -->
       <ul class="nav navbar-nav navbar-right">
         <li class="menu-icon">
           <%= link_to root_path do %>
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-envelope fa-stack-1x" aria-hidden="true"></i>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+          <% end %>
+        </li>
+        <!-- Facebook -->
+        <li class="menu-icon">
+          <%= link_to "https://www.facebook.com/heba.smit", target:"_blank" do %>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </span>
+          <% end %>
+        </li>
+        <!-- Linkedin -->
+        <li class="menu-icon">
+          <%= link_to "https://www.linkedin.com/in/heba-smit-176994b1?trk=nav_responsive_tab_profile_pic", target:"_blank" do %>
+          <span class="<%= current_page?(root_path) ? 'nav-icon' : ' ' %>">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
           </span>
           <% end %>
         </li>
       </ul>
       <!-- end of right menu -->
-    </div>
+    </div><!-- end of navbar collapse -->
 
   </div><!-- end of container-fluid -->
 </nav><!-- end of main navigation -->
