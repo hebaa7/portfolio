@@ -1,0 +1,65 @@
+<section class="project-header raja">
+  <center>
+    <div class="content trigger">
+      <h3>PROJECT</h3>
+      <h1>RAJA'S FASHIONS
+      </h1>
+      <hr>
+      <%= image_tag('projects/development-white.png', class: 'development-icon') %>
+      <%= image_tag('projects/responsive-white.png', class: 'responsive-icon') %>
+      <%= image_tag('projects/design-white.png', class: 'design-icon') %>
+    </div>
+  </center>
+</section>
+
+<section class="project-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 about text">
+        <h2>ABOUT</h2>
+        <p>An ecommerce website for a tailoring company in Bangkok. Main features:</p>
+        <ul>
+          <li>Static site</li>
+          <li>(Mobile) responsive</li>
+          <li>Gallery with lightbox</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+        <%= image_tag('projects/uteeni-home.png', class: "img-responsive") %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 ">
+        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive project-mobile") %>
+      </div>
+      <div class="col-sm-6 text skills">
+        <h2>SKILLS</h2>
+
+        <ul>
+          <li>Frontend web development <br> (HTML, CSS)</li>
+          <li>Responsive design and development</li>
+          <li>WordPress</li>
+          <li>Browser testing</li>
+        </ul>
+
+        <p class="credit"><strong>Design is credited to the WCB team.</strong></p>
+      </div>
+    </div>
+
+    <div class="row table-row">
+      <div class="col-sm-6 challenges text table-column">
+        <h2>CHALLENGES</h2>
+        <p>Raja’s Fashions was my first web development project during which I familiarized with WordPress and its various plugins. A notable challenge was to install a Lightbox plugins to each product as it initially did not function properly.</p>
+      </div>
+      <div class="col-sm-6 table-column">
+        <%= link_to 'http://www.uteeni.com', target: "_blank", class: "view-site" do %>
+          view www.uteeni.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render 'partials/portfolio_more_1' %>

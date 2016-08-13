@@ -1,0 +1,67 @@
+<section class="project-header hello">
+  <center>
+    <div class="content trigger">
+      <h3>PROJECT</h3>
+      <h1>HELLO!MAGAZINE
+      </h1>
+      <hr>
+      <%= image_tag('projects/development-white.png', class: 'development-icon') %>
+      <%= image_tag('projects/responsive-white.png', class: 'responsive-icon') %>
+      <%= image_tag('projects/design-white.png', class: 'design-icon') %>
+    </div>
+  </center>
+</section>
+
+<section class="project-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 about text">
+        <h2>ABOUT</h2>
+        <p>A full dynamic online magazine built on the eZ platform. Main frontend features:</p>
+        <ul>
+          <li>Carousel</li>
+          <li>(Mobile) Responsive</li>
+          <li>Gallery</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+        <%= image_tag('projects/uteeni-home.png', class: "img-responsive") %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 ">
+        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive project-mobile") %>
+      </div>
+      <div class="col-sm-6 text skills">
+        <h2>SKILLS</h2>
+
+        <ul>
+          <li>Frontend web development <br> (HTML, CSS, JavaScript, Twig)</li>
+          <li>responsive design and development</li>
+          <li>Browser testing</li>
+          <li>Linux</li>
+          <li>eZ platform</li>
+          <li>Project management</li>
+        </ul>
+
+        <p class="credit"><strong>Design and backend development is credited to the Burda and Connectica team respectively.</strong></p>
+      </div>
+    </div>
+
+    <div class="row table-row">
+      <div class="col-sm-6 challenges text table-column">
+        <h2>CHALLENGES</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="col-sm-6 table-column">
+        <%= link_to 'http://www.uteeni.com', target: "_blank", class: "view-site" do %>
+          view www.uteeni.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render 'partials/portfolio_more_2' %>
