@@ -50,11 +50,12 @@ h5
   letter-spacing: 2.5px
   font-weight: 600
 
-p
-  font-family: 'Raleway', 'Helvetica', 'Arial'
-  font-weight: 200
+p, ul
+  font-family: "Raleway", "Helvetica", "Arial"
+  font-weight: 400
   font-size: 14px
   line-height: 24px
+  color: #353535
 
 hr
   width: 40px
@@ -189,6 +190,8 @@ section.footer
   // Heading and subheading
   .content
     padding: 20px 0px
+    p
+      color: #fff
 
   // Contact form
   .form
@@ -203,7 +206,7 @@ section.footer
       border: none
       padding: 10px
       font-family: 'Raleway', 'Helvetica', 'Arial'
-      font-size: 12px
+      font-size: 11px
       text-transform: uppercase
       letter-spacing: 1px
       font-weight: 500
@@ -254,6 +257,7 @@ section.footer
 
   #copyright
     border-top: 1px solid rgba(255, 255, 255, 0.3)
+    color: #fff
     padding: 10px 0px
     margin-bottom: 0px
     font-size: 12px
@@ -419,6 +423,7 @@ body.home
 
 // Portfolio more
 section.portfolio.more
+  padding: 60px 0px 50px
   background: #f6f6f6
 
   hr
@@ -469,6 +474,8 @@ body.about
 /*       Portfolio       */
 /*************************/
 
+/* Portfolio */
+
 // Header
 section.portfolio-header
   height: 250px
@@ -478,7 +485,9 @@ section.portfolio-header
     border: 2px solid #2F4148
 
 
-// Individual project header
+/* Projects */
+
+// Project header
 section.project-header
   background-size: cover
   background-repeat: no-repeat
@@ -486,19 +495,24 @@ section.project-header
   padding: 140px 0px
   height: 400px
   color: #fff
+  // Icons below heading
   img
-    width: 65px
+    width: 80px
     height: auto
-    padding-left: 10px
-    padding-right: 10px
+    padding-left: 15px
+    padding-right: 15px
 
 
-// Individual project content
+// Project content
 section.project-content
   color: #2F4148
-  padding: 40px 0px
+  padding: 60px 0px
   h2
     margin-bottom: 15px
+
+  img
+    margin-top: -20px
+    margin-bottom: 50px
 
   .container
     max-width: 900px
@@ -507,40 +521,20 @@ section.project-content
     padding-left: 40px
     padding-right: 40px
 
+  .project-mobile
+    width: 250px
+    margin-left: 50px
+
+  .credit
+    font-size: 12px
+    line-height: 18px
+
   // Link to project site
   .view-site
     margin-top: 30px
     display: block
-
-
-// Individual projects footer
-body.projects
-  section.footer
-    background: #272827
-
-
-// Project Uteeni
-section.uteeni-header
-  background: url(image_path('projects/uteeni-header.jpg'))
-
-  // Pencil icon
-  .design-icon
-    opacity: 0.5
-
-section.uteeni-content
-
-  // Content text
-  .about
-    padding-top: 70px
-  .skills
-    padding-top: 100px
-  .challenges
-    padding-top: 40px
-
-  // Content images
-  .uteeni-listing
-    width: 250px
-    margin-left: 50px
+    color: #353535
+    font-family: 'Raleway', 'Helvetica', 'Arial'
 
   // Table for link
   .table-row
@@ -556,6 +550,23 @@ section.uteeni-content
     position: absolute
     right: 0
     bottom: 10px
+
+/* Projects */
+
+// Uteeni
+section.uteeni
+  background: url(image_path('projects/uteeni-header.jpg'))
+
+  // Pencil icon
+  .design-icon
+    opacity: 0.5
+
+section.connectica
+  background: #202022
+  span
+    font-weight: 100
+    letter-spacing: 4px
+
 
 /*************************/
 /*         Media         */

@@ -1,4 +1,4 @@
-<section class="project-header uteeni-header">
+<section class="project-header uteeni">
   <center>
     <div class="content trigger">
       <h3>PROJECT</h3>
@@ -12,7 +12,7 @@
   </center>
 </section>
 
-<section class="project-content uteeni-content">
+<section class="project-content">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 about text">
@@ -28,19 +28,20 @@
 
     <div class="row">
       <div class="col-sm-6 ">
-        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive uteeni-listing") %>
+        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive project-mobile") %>
       </div>
       <div class="col-sm-6 text skills">
         <h2>SKILLS</h2>
-        <p>
-          <ul>
-            <li>Frontend web development (HTML, CSS, JavaScript, Ruby on Rails)</li>
-            <li>responsive design and development<li>
-            <li>UX design</li>
-            <li>user testing</li>
-            <strong>Design and backend development is credited to the UTEENI team.</strong>
-          </ul>
-        </p>
+
+        <ul>
+          <li>Frontend web development <br> (HTML, CSS, JavaScript, Ruby on Rails)</li>
+          <li>responsive design and development</li>
+          <li>Email design and development</li>
+          <li>Browser testing</li>
+          <li>User testing</li>
+        </ul>
+
+        <p class="credit"><strong>Design and backend development is credited to the UTEENI team.</strong></p>
       </div>
     </div>
 
@@ -50,7 +51,9 @@
         <p>This was my first Rails project, so I had to familiarize with and feel comfortable using Ruby on Rails on the frontend, pull and send data, and build forms.</p>
       </div>
       <div class="col-sm-6 table-column">
-        <%= link_to "view www.uteeni.com", 'http://www.uteeni.com', target: "_blank", class: "view-site" %>
+        <%= link_to 'http://www.uteeni.com', target: "_blank", class: "view-site" do %>
+          view www.uteeni.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
       </div>
     </div>
   </div>
