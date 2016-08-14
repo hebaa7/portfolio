@@ -18,28 +18,26 @@
       <div class="col-sm-6 about text">
         <h2>ABOUT</h2>
         <p>Harvester is a data collection app for the UTEENI project where people can sign up and go through a short training process to collect listings. Main features:</p>
-        <ul>
+        <ul class="left">
           <li>Dynamic site</li>
           <li>Authentication system</li>
           <li>Multiple language feature</li>
+        </ul>
+        <ul class="right">
           <li>Quiz</li>
           <li>Email functionality (Mandrill)</li>
           <li>(Mobile)responsive</li>
         </ul>
       </div>
 
-      <div class="col-sm-6">
-        <%= image_tag('projects/uteeni-home.png', class: "img-responsive") %>
+      <div class="col-sm-6 ">
+        <%= image_tag('projects/harvester-mac.png', class: "img-responsive project-mac") %>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-6 ">
-        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive project-mobile") %>
-      </div>
-      <div class="col-sm-6 text skills">
+      <div class="col-sm-6 col-sm-push-6 text skills">
         <h2>SKILLS</h2>
-
         <ul>
           <li>Frontend web development <br> (HTML, SASS, JavaScript, Ruby on Rails)</li>
           <li>responsive design and development</li>
@@ -47,20 +45,26 @@
           <li>Browser testing</li>
           <li>User testing</li>
         </ul>
-
         <p class="credit"><strong>Design and backend development is credited to the UTEENI team.</strong></p>
       </div>
+
+      <div class="col-sm-6 col-sm-pull-6">
+        <%= image_tag('projects/uteeni-mobile.png', class: "img-responsive project-mobile") %>
+      </div>
+
     </div>
 
-    <div class="row table-row">
-      <div class="col-sm-6 challenges text table-column">
+
+    <div class="row">
+      <div class="col-sm-6 challenges text">
         <h2>CHALLENGES</h2>
         <p>This was my first Rails project, so I had to familiarize with and feel comfortable using Ruby on Rails on the frontend, pull and send data, and build forms.</p>
-      </div>
-      <div class="col-sm-6 table-column">
         <%= link_to 'http://harvester.uteeni.com', target: "_blank", class: "view-site" do %>
           view harvester.uteeni.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         <% end %>
+      </div>
+      <div class="col-sm-6">
+        <%= image_tag('projects/uteeni-tablet.png', class: "img-responsive project-tablet") %>
       </div>
     </div>
   </div>

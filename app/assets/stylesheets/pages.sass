@@ -510,7 +510,7 @@ section.project-header
   background-repeat: no-repeat
   background-position-y: center
   padding: 140px 0px
-  height: 400px
+  height: 450px
   color: #fff
   // Icons below heading
   img
@@ -523,23 +523,33 @@ section.project-header
 // Project content
 section.project-content
   color: #2F4148
-  padding: 60px 0px
+  padding: 60px 0px 20px
   h2
     margin-bottom: 15px
 
   img
     margin-top: -20px
-    margin-bottom: 50px
 
   .container
     max-width: 900px
 
+  .row
+    margin-bottom: 40px
+
   .text
     padding: 0px 40px
 
+  .project-mac
+    margin-top: 0px
+    
   .project-mobile
-    width: 250px
+    max-width: 270px
+    width: 100%
     margin-left: 50px
+
+  .project-tablet
+    max-width: 400px
+    width: 100%
 
   .credit
     font-size: 12px
@@ -551,21 +561,6 @@ section.project-content
     display: block
     color: #353535
     font-family: 'Raleway', 'Helvetica', 'Arial'
-
-  // Table for link
-  .table-row
-    display: table
-    float: none
-    position: relative
-
-  .table-column
-    display: table-cell
-    float: none
-
-  .view-site
-    position: absolute
-    right: 0
-    bottom: 10px
     -webkit-transition: all ease-out 0.1s
     -moz-transition: all ease-out 0.1s
     -o-transition: all ease-out 0.1s
@@ -612,6 +607,11 @@ section.raja
 
 
 
+
+
+
+
+
 /*************************/
 /*         Media         */
 /*************************/
@@ -630,6 +630,11 @@ section.raja
     .raja,
     .hello
       float: initial
+
+  // Project content
+  section.project-content
+    img
+      margin-top: 0px
 
 @media (min-width: 537px) and (max-width: 767px)
   /* Portfolio partial */
@@ -653,7 +658,6 @@ section.raja
 
 
 @media (max-width: 767px)
-
   /* Project */
   section.project-content
     .text
@@ -680,14 +684,10 @@ section.raja
     .project-mobile
       margin: 0 auto
 
-    .table-column
-      display: initial
-      float: initial
-
     .view-site
-      position: initial
-      margin: 0 auto
+      margin-top: 20px
       text-align: center
+      color: #FAB45D
 
   /* Footer */
   section.footer
