@@ -26,15 +26,12 @@
       </div>
 
       <div class="col-sm-6">
-        <%= image_tag('projects/uteeni-home.png', class: "img-responsive") %>
+        <%= image_tag('projects/hello-mac.png', class: "img-responsive") %>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-6 ">
-        <%= image_tag('projects/uteeni-listings.png', class: "img-responsive project-mobile") %>
-      </div>
-      <div class="col-sm-6 text skills">
+      <div class="col-sm-6 col-sm-push-6 text skills">
         <h2>SKILLS</h2>
 
         <ul>
@@ -48,17 +45,23 @@
 
         <p class="credit"><strong>Design and backend development is credited to the Burda and Connectica team respectively.</strong></p>
       </div>
+
+      <div class="col-sm-6 col-sm-pull-6">
+        <%= image_tag('projects/hello-mobile.png', class: "img-responsive project-mobile") %>
+      </div>
+
     </div>
 
-    <div class="row table-row">
-      <div class="col-sm-6 challenges text table-column">
+    <div class="row">
+      <div class="col-sm-6 challenges text">
         <h2>CHALLENGES</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      </div>
-      <div class="col-sm-6 table-column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <%= link_to 'http://hello-staging.connectica.no', target: "_blank", class: "view-site" do %>
           view www.hellomagazinethailand.com <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         <% end %>
+      </div>
+      <div class="col-sm-6">
+        <%= image_tag('projects/hello-tablet.png', class: "img-responsive project-tablet") %>
       </div>
     </div>
   </div>
