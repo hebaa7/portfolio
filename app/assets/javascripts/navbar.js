@@ -25,7 +25,7 @@ $(document).ready(function(){
           });
           $('#main-nav .nav-item').css({
             'color': '#fff',
-            'font-weight': '400'
+            'font-weight': '300'
           });
           $('#main-nav .nav-icon').css('color', '#fff');
        }
