@@ -1,0 +1,15 @@
+<!-- email that comes to me after users fill and send out the form -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p><strong>New inquiry from:</strong> <%= @user[0] %><p>
+    <p><strong>E-mail:</strong> <%= @user[1] %></p>
+    <p><strong>Subject:</strong> <%= @user[2] %></p>
+    <p><strong>Message:</strong> <%= @user[3] %></p>
+
+  </body>
+</html>

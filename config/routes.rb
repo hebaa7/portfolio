@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get '/portfolio/raja'
 
 
+  post '/user', to: 'users#create'
+
 end
