@@ -37,6 +37,8 @@ gem 'pg'
 gem 'font-awesome-rails', '~> 4.1.0.0'
 # Bootstrap sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+gem 'rails_12factor', '~> 0.0.3'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
