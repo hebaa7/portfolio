@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyPortfolio</title>
+  <title>Heba - <%= yield(:title)%></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.png' %>
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
