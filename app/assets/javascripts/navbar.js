@@ -17,6 +17,7 @@ $(document).ready(function(){
             'font-weight': '500'
           });
           $('#main-nav .nav-icon').css('color', '#2F4148');
+          $('#main-nav .icon-bar').css('background-color', '#2F4148');
        } else {
           $('#main-nav').css({
             'background-color': 'transparent',
@@ -25,9 +26,10 @@ $(document).ready(function(){
           });
           $('#main-nav .nav-item').css({
             'color': '#fff',
-            'font-weight': '300'
+            'font-weight': '400'
           });
           $('#main-nav .nav-icon').css('color', '#fff');
+          $('#main-nav .icon-bar').css('background-color', '#fff');
        }
    });
 });

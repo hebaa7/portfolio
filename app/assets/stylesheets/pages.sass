@@ -44,9 +44,10 @@ h3
 h5
   font-family: 'Montserrat', 'Helvetica', 'Arial'
   font-size: 14px
-  margin-bottom: 10px
+  margin-bottom: 15px
   margin-top: 15px
   letter-spacing: 2px
+  color: #2E4249
 
 p, ul
   font-family: "Raleway", "Helvetica", "Arial"
@@ -58,7 +59,7 @@ p, ul
 hr
   width: 40px
   border: 2px solid #fff
-  margin: 20px 0px
+  margin: 18px 0px
 
 // Headings and subheadings
 .subheading
@@ -93,7 +94,9 @@ hr
   // Hamburger icon
   .navbar-toggle
     border: none
-    &:hover
+    &:hover,
+    &:active,
+    &:focus
       background-color: transparent
     .icon-bar
       background-color: #fff
@@ -278,7 +281,7 @@ section.footer
 // Header
 section.home-header
   color: #fff
-  background: url(image_path('home/home-header.jpg'))
+  background: url(image_path('home/home-header3.jpg'))
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -287,12 +290,12 @@ section.home-header
 
   // Macbook image
   img
-    width: 800px
+    width: 750px
     position: absolute
     left: 0
     right: 0
     margin: 0 auto
-    top: 125px
+    top: 90px
 
   // Heading and subheading
   .content
@@ -300,7 +303,7 @@ section.home-header
     left: 0
     right: 0
     margin: 0 auto
-    padding: 190px 0px
+    padding: 180px 0px
 
   h3
     font-size: 15px
@@ -506,9 +509,10 @@ section.project-header
   background-size: cover
   background-repeat: no-repeat
   background-position-y: center
-  padding: 140px 0px
-  height: 450px
+  padding: 125px 0px
+  height: 400px
   color: #fff
+
   // Icons below heading
   img
     width: 70px
@@ -521,6 +525,7 @@ section.project-header
 section.project-content
   color: #2F4148
   padding: 60px 0px 20px
+
   h2
     margin-bottom: 15px
 
@@ -621,6 +626,12 @@ section.raja
   .responsive-icon
     opacity: 0.4
 
+section.heba
+  background-image: url(image_path('projects/heba-header.jpg'))
+  .responsive-icon
+    opacity: 0.4
+  .development-icon
+    opacity: 0.4
 
 
 
@@ -677,6 +688,10 @@ section.raja
 
 @media (max-width: 767px)
   /* Project */
+  section.project-header
+    height: 300px
+    padding: 75px 0px
+
   section.project-content
     .text
       text-align: center
