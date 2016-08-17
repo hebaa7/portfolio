@@ -4,6 +4,6 @@ class UserMailer < ApplicationMailer
   def welcome_email(user)
     @user = user
     @url  = 'http://example.com/login'
-    mail(to: 'hebasmit@gmail.com', name: :name, email: :email, subject: :subject, message: :message,)
+    mail(to: 'hebaportfoliosite@gmail.com', name: :name, email: :email, subject: :subject, message: :message,)
   end
 end
