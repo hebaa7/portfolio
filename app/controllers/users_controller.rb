@@ -8,18 +8,12 @@ class UsersController < ApplicationController
       if @user != nil
         UserMailer.welcome_email(@user).deliver_later
 
-        redirect_to root_path
-
+        render 'modal'
 
       else
         # format.html { render action: 'new', notice: 'Sorry! Your email could not be sent at this time, please try again later.' }
 
       end
 
-  # def user_params
-  #   params.permit(:name, :email, :subject, :message)
-  # end
-
-    # end
   end
 end
