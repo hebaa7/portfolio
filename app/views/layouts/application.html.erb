@@ -21,12 +21,20 @@
 </head>
 <body class="<%= "#{controller.controller_name} #{@body_class}".strip %>">
 
-  <%= render 'partials/navbar' %>
+  <% if current_page?(email_path) %>
+
+  <% else %>
+    <%= render 'partials/navbar' %>
+  <% end %>
+
 
 <%= yield %>
 
+<% if current_page?(email_path) %>
 
-<%= render 'partials/footer' %>
+<% else %>
+  <%= render 'partials/footer' %>
+<% end %>
 
 
 <script>

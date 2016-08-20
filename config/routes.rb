@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get '/portfolio/hello'
   get '/portfolio/raja'
 
-
   post '/user', to: 'users#create'
+
+  get '/message-sent', to: 'email#index', as: 'email'
 
 end

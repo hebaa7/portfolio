@@ -8,10 +8,10 @@ class UsersController < ApplicationController
       if @user != nil
         UserMailer.welcome_email(@user).deliver_later
 
-        render 'modal'
+        redirect_to '/message-sent'
 
       else
-        # format.html { render action: 'new', notice: 'Sorry! Your email could not be sent at this time, please try again later.' }
+         redirect_to '/message-sent'
 
       end
 
