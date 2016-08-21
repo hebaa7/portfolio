@@ -338,7 +338,7 @@ section.home-header
   height: 460px
 
   // Macbook image
-  img
+  img.header-mac
     width: 750px
     position: absolute
     left: 0
@@ -346,13 +346,23 @@ section.home-header
     margin: 0 auto
     top: 90px
 
+  img.header-iphone
+    display: none
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    max-width: 260px
+    width: 100%
+    top: 10px
+
   // Heading and subheading
   .content
     position: absolute
     left: 0
     right: 0
     margin: 0 auto
-    padding: 180px 0px
+    padding: 170px 0px
 
   h3
     font-size: 15px
@@ -500,7 +510,7 @@ section.about-header
   background-size: cover
   background-repeat: no-repeat
   background-position: center
-  padding: 140px 0px
+  padding: 120px 0px
   height: 400px
 
   hr
@@ -651,7 +661,7 @@ section.uteeni
     opacity: 0.3
 
 section.connectica
-  background-image: url(image_path('projects/connectica-header.jpg'))
+  background-color: #202022
   span
     font-weight: 100
     letter-spacing: 4px
@@ -697,6 +707,11 @@ section.heba
 //
 
 @media (max-width: 536px)
+  // General
+  h1
+    font-size: 35px
+
+
   // Bootstrap column adjustment
   .col-xxs-12
     width: 100%
@@ -738,9 +753,12 @@ section.heba
 
 
 @media (max-width: 767px)
+  // General styles 
+  h1
+    font-size: 35px
+
 
   // Navigation
-
   #main-nav,
     .container-fluid
       background: #fff
@@ -753,10 +771,27 @@ section.heba
   .navbar-nav li > a span.nav-icon
     color: #2F4148!important
 
+  // Home header
+  section.home-header
+    height: 410px
+    background-position-x: 52%
+
+    .subheading
+      font-size: 14px
+      max-width: 190px
+    .content
+      padding: 100px 0px
+    // Hide mac in small screens
+    img.header-mac
+      display: none
+
+    img.header-iphone
+      display: block
+
   // Project
   section.project-header
     height: 300px
-    padding: 75px 0px
+    padding: 85px 0px
 
   section.project-content
     .text
@@ -808,15 +843,12 @@ section.heba
     width: 95%
 
   // Home
-
   section.home-header
-    height: 375px
-    .content
-      padding: 80px 0px
 
-    // Hide mac in small screens
+    // macbook image
     img
-      display: none
+      width: 700px
+      margin-top: -60px
 
   // Skills
   .skill
